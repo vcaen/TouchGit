@@ -1,24 +1,10 @@
 package me.sheimi.sgit.ssh;
 
-import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.KeyPair;
-import com.jcraft.jsch.Session;
-import com.jcraft.jsch.UserInfo;
-
-import org.eclipse.jgit.transport.CredentialsProviderUserInfo;
-import org.eclipse.jgit.transport.JschConfigSessionFactory;
-import org.eclipse.jgit.transport.OpenSshConfig.Host;
-import org.eclipse.jgit.util.FS;
-
-import java.io.File;
-
-import me.sheimi.sgit.MGitApplication;
-
 /**
  * Custom config for Jsch, including using user-provided private keys
  */
-public class SGitSessionFactory extends JschConfigSessionFactory {
+public class SGitSessionFactory {}/*
+public class SGitSessionFactory extends TransportGitSsh {
 
     @Override
     protected void configure(Host host, Session session) {
@@ -45,3 +31,4 @@ public class SGitSessionFactory extends JschConfigSessionFactory {
     }
 
 }
+*/

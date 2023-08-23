@@ -123,6 +123,11 @@ public abstract class RepoOpTask extends SheimiAsyncTask<Void, String, Boolean> 
             return isTaskCanceled();
         }
 
+        @Override
+        public void showDuration(boolean enabled) {
+
+        }
+
         private void setProgress() {
             String msg = mTitle;
             int showedWorkDown = Math.min(mWorkDone, mTotalWork);
